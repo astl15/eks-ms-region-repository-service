@@ -1,4 +1,4 @@
-package com.astl.esk.ms.regionrepositoryservice.config;
+package com.astl.esk.ms.regionrepositoryservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -6,4 +6,11 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>region-repository-service-lib</artifactId>
+  
+  <dependencies>
+  	<dependency>
+    	<groupId>javax.persistence</groupId>
+    	<artifactId>javax.persistence-api</artifactId>
+   	</dependency>
+  </dependencies>
 </project>

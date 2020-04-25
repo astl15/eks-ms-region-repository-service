@@ -6,7 +6,11 @@ module regionrepositoryservice.business {
 	requires spring.core;
 	requires spring.web;
 	
+	requires org.hibernate.orm.core;
 	requires java.instrument;
-	
-	opens com.astl.esk.ms.regionrepositoryservice.config;
+	requires java.sql;
+	requires java.persistence;
+
+	opens com.astl.esk.ms.regionrepositoryservice;
+	opens com.astl.esk.ms.regionrepositoryservice.entity;
 }
