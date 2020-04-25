@@ -1,4 +1,4 @@
 module regionrepositoryservice.lib {
-	requires java.persistence;
+	exports com.astl.esk.ms.regionrepositoryservice.model to regionrepositoryservice.business;
 	
 }
