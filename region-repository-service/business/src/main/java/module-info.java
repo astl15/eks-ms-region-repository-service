@@ -8,15 +8,14 @@ module regionrepositoryservice.business {
 	requires spring.data.jpa;
 	requires spring.data.commons;
 	requires spring.tx;
-	
 	requires java.instrument;
 	requires java.sql;
 	requires java.persistence;
-	
 	requires org.hibernate.orm.core;
-
 	requires regionrepositoryservice.lib;
-
+	
 	opens com.astl.esk.ms.regionrepositoryservice;
 	opens com.astl.esk.ms.regionrepositoryservice.entity;
+	opens com.astl.esk.ms.regionrepositoryservice.dao to spring.beans, spring.core;
+	
 }

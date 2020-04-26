@@ -1,4 +1,4 @@
-package com.astl.esk.ms.regionrepositoryservice.model;
+package com.astl.esk.ms.regionrepositoryservice.model.in;
 
 public class SearchRegionIn {
 	

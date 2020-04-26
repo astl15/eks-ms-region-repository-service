@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 import com.astl.esk.ms.regionrepositoryservice.dao.utils.RegionSpecifications;
 import com.astl.esk.ms.regionrepositoryservice.entity.Region;
-import com.astl.esk.ms.regionrepositoryservice.model.SearchRegionIn;
+import com.astl.esk.ms.regionrepositoryservice.model.in.SearchRegionIn;
 
 @Component
 public class RegionDAOImpl implements RegionDAO {
