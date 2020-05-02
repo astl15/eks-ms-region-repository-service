@@ -8,6 +8,7 @@ module regionrepositoryservice.business {
 	requires transitive regionrepositoryservice.lib;
 	requires java.xml;
 	requires spring.core;
+	requires org.hibernate.orm.core;
 	
 	exports com.astl.esk.ms.regionrepositoryservice.business.dao to spring.beans;
 	exports com.astl.esk.ms.regionrepositoryservice.business.entity to regionrepositoryservice.api;
