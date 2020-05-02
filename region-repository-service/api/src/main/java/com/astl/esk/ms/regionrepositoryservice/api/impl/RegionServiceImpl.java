@@ -3,6 +3,7 @@ package com.astl.esk.ms.regionrepositoryservice.api.impl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.astl.esk.ms.regionrepositoryservice.api.intf.RegionService;
 import com.astl.esk.ms.regionrepositoryservice.business.manager.RegionManager;
@@ -11,6 +12,7 @@ import com.astl.esk.ms.regionrepositoryservice.model.dto.RegionDTO;
 import com.astl.esk.ms.regionrepositoryservice.model.in.RegionIn;
 import com.astl.esk.ms.regionrepositoryservice.model.in.SearchRegionIn;
 
+@Component
 public class RegionServiceImpl implements RegionService{
 
 	@Autowired

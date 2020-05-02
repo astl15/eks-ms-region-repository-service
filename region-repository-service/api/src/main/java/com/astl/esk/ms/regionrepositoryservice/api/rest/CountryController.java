@@ -29,7 +29,7 @@ public class CountryController {
 			method = RequestMethod.POST)
 	public ResponseEntity<CountryDTO> createCountry(@RequestBody CountryIn countryIn) {
 		CountryDTO country = countryService.createCountry(countryIn);
-		return new ResponseEntity<CountryDTO>(country, null, HttpStatus.CREATED);
+		return new ResponseEntity<CountryDTO>(country, HttpStatus.CREATED);
 	}
 	
 	@RequestMapping(

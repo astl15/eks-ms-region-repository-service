@@ -31,7 +31,7 @@ public class Country {
 			orphanRemoval = true)
 	List<Region> countryRegions;
 	
-	private Country() {
+	public Country() {
 		
 	}
 

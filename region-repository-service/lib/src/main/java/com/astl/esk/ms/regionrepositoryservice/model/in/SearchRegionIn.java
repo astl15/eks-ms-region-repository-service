@@ -2,7 +2,7 @@ package com.astl.esk.ms.regionrepositoryservice.model.in;
 
 public class SearchRegionIn {
 	
-private String countryShortName;
+	private String countryShortName;
 	
 	private Integer pageNumber;
 	
