@@ -1,7 +1,0 @@
-com\astl\esk\ms\regionrepositoryservice\model\in\SearchRegionIn.class
-com\astl\esk\ms\regionrepositoryservice\model\dto\RegionDTO.class
-module-info.class
-com\astl\esk\ms\regionrepositoryservice\model\dto\CountryDTO.class
-com\astl\esk\ms\regionrepositoryservice\model\in\CountryIn.class
-com\astl\esk\ms\regionrepositoryservice\model\in\RegionIn.class
-com\astl\esk\ms\regionrepositoryservice\model\dto\SearchCountryDTO.class
