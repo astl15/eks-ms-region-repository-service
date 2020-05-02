@@ -1,21 +1,20 @@
 module regionrepositoryservice.business {
 	requires spring.beans;
-	requires spring.boot;
-	requires spring.boot.autoconfigure;
 	requires spring.context;
-	requires spring.core;
-	requires spring.web;
 	requires spring.data.jpa;
 	requires spring.data.commons;
 	requires spring.tx;
-	requires java.instrument;
-	requires java.sql;
 	requires java.persistence;
-	requires org.hibernate.orm.core;
-	requires regionrepositoryservice.lib;
+	requires transitive regionrepositoryservice.lib;
+	requires java.xml;
+	requires spring.core;
 	
-	opens com.astl.esk.ms.regionrepositoryservice;
-	opens com.astl.esk.ms.regionrepositoryservice.entity;
-	opens com.astl.esk.ms.regionrepositoryservice.dao to spring.beans, spring.core;
+	exports com.astl.esk.ms.regionrepositoryservice.business.dao to spring.beans;
+	exports com.astl.esk.ms.regionrepositoryservice.business.entity to regionrepositoryservice.api;
+	exports com.astl.esk.ms.regionrepositoryservice.business.manager to regionrepositoryservice.api;
+	exports com.astl.esk.ms.regionrepositoryservice.business.mapper to regionrepositoryservice.api;
 	
+	opens com.astl.esk.ms.regionrepositoryservice.business.dao;
+	opens com.astl.esk.ms.regionrepositoryservice.business.manager;
+	opens com.astl.esk.ms.regionrepositoryservice.business.entity;
 }
