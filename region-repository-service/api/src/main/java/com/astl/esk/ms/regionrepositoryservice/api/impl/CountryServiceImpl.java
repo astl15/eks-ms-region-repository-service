@@ -34,4 +34,10 @@ public class CountryServiceImpl implements CountryService {
 		return output;
 	}
 
+	@Override
+	public CountryDTO findByCountryShortName(final String shortName) {
+		return CountryMapper.mapFrom(
+				countryManager.findCountryByShortName(shortName));
+	}
+
 }

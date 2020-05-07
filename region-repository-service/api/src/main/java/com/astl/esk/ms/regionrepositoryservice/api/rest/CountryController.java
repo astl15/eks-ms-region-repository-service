@@ -40,5 +40,14 @@ public class CountryController {
 		SearchCountryDTO result = countryService.searchCountries(pageNumber, nrOfResultsPerPage);
 		return new ResponseEntity<SearchCountryDTO>(result, null, HttpStatus.OK);
 	}
+	
+	@RequestMapping(
+			value="/search",
+			produces = {MediaType.APPLICATION_JSON_VALUE}, 
+			method = RequestMethod.GET)
+	public ResponseEntity<CountryDTO> findByCountryShortName(@RequestParam("shortName") final String countryShortName) {
+		CountryDTO country = countryService.findByCountryShortName(countryShortName);
+		return new ResponseEntity<CountryDTO>(country, HttpStatus.OK);
+	}
 
 }

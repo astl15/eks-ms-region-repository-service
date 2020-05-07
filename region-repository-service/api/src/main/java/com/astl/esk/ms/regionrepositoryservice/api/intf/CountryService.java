@@ -10,4 +10,5 @@ public interface CountryService {
 	
 	SearchCountryDTO searchCountries(final int pageNumber, final int nrOfResultsPerPage);
 	
+	CountryDTO findByCountryShortName(final String shortName);
 }
