@@ -28,4 +28,9 @@ public class RegionServiceImpl implements RegionService{
 		return RegionMapper.mapFrom(regionManager.searchRegions(searchRegionIn));
 	}
 
+	@Override
+	public RegionDTO findRegionByShortName(final String regionShortName) {
+		return RegionMapper.mapFrom(regionManager.findRegionByShortName(regionShortName));
+	}
+
 }

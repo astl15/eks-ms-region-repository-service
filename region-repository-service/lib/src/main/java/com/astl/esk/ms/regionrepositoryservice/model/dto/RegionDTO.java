@@ -2,7 +2,7 @@ package com.astl.esk.ms.regionrepositoryservice.model.dto;
 
 public class RegionDTO {
 	
-private Long regionId;
+	private Long regionId;
 	
 	private String regionName;
 	

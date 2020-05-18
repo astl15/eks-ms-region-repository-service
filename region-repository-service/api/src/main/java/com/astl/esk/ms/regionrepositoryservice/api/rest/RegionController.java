@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.astl.esk.ms.regionrepositoryservice.api.intf.RegionService;
@@ -40,6 +41,15 @@ public class RegionController {
 	public ResponseEntity<List<RegionDTO>> searchRegions(@RequestBody SearchRegionIn searchRegionIn) {
 		List<RegionDTO> regions = regionService.searchRegions(searchRegionIn);
 		return new ResponseEntity<List<RegionDTO>>(regions, HttpStatus.OK);
+	}
+	
+	@RequestMapping(
+			value="/search",
+			produces = {MediaType.APPLICATION_JSON_VALUE}, 
+			method = RequestMethod.GET)
+	public ResponseEntity<RegionDTO> findRegionByShortName(@RequestParam("shortName") final String regionShortName) {
+		RegionDTO region = regionService.findRegionByShortName(regionShortName);
+		return new ResponseEntity<RegionDTO>(region, HttpStatus.OK);
 	}
 	
 }

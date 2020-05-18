@@ -12,4 +12,6 @@ public interface RegionService {
 	
 	List<RegionDTO> searchRegions(final SearchRegionIn searchRegionIn);
 	
+	RegionDTO findRegionByShortName(final String regionShortName);
+	
 }
